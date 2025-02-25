@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <title>Red Rising Technical Document</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!--Font links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Wallpoet&family=Zen+Dots&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav id="navbar">
+    <header>Red Rising</header>
+
+    <ul>
+      <li> <a class="nav-link" href="#introduction">Introduction</a> </li>
+      <li> <a class="nav-link" href="#world_building">World Building</a> </li>
+      <li> <a class="nav-link" href="#the_colors">The Colors</a> </li>
+      <li> <a class="nav-link" href="#characters">Characters</a> </li>
+      <li> <a class="nav-link" href="#major_plot_points">Major Plot Points</a> </li>
+      <li> <a class="nav-link" href="#technologies">Technologies</a> </li>
+      <li> <a class="nav-link" href="#space_warfare">Space Warfare</a> </li>
+      <li> <a class="nav-link space-warfare-subsection" href="#spacecraft">Spacecraft</a> </li>
+      <li> <a class="nav-link space-warfare-subsection" href="#weaponry">Weaponry</a> </li>
+      <li> <a class="nav-link space-warfare-subsection" href="#strategy">Strategy</a> </li>
+      <li> <a class="nav-link" href="#duels">Duels</a> </li>
+
+    </ul>
+
+  </nav>
+
+  <main id="main-doc">
+    <section id="introduction" class="main-section">
+      <header>
+        <h2>Introduction</h2>
+      </header>
+      <p>The Red Rising series by Pierce Brown is a sci-fi saga set in a dystopian future on Mars, where society is divided into rigid classes known as "Colors." The protagonist, Darrow, seeks to bring down the Gold ruling class after the loss of his wife. Through his journey, Darrow infiltrates the Golds to start a revolution, which plays out across multiple novels.</p>
+    </section>
+
+    <section id="world_building" class="main-section">
+      <header>
+        <h2>World Building</h2>
+      </header>
+      <p>
+        The Red Rising series takes place in a future where humanity has colonized Mars and beyond. The society is highly structured, with each group assigned a color-based role. The world-building elements include technological advancements, space exploration, and political intrigue.
+
+      <ul>
+        <li><span class="bold">Mars Colonization:</span> Humans have terraformed Mars and created large cities to house different factions.</li>
+        <li><span class="bold">The Society of Colors:</span> Society is divided into castes, with Golds at the top and Reds at the bottom.</li>
+        <li><span class="bold">The Society's Code:</span> A strict set of rules each color must adhere to.</li>
+        <li><span class="bold">Technology:</span> Space travel, artificial intelligence, and genetic engineering play major roles. </li>
+      </ul>
+
+      <img src="https://i.redd.it/nqw38t8hrdzb1.png" alt="Map of the Solar System in Red Rising" />
+      </p>
+    </section>
+
+    <section id="the_colors" class="main-section">
+      <header>
+        <h2>The Colors</h2>
+      </header>
+      <p> The Red Rising universe is governed by a rigid caste system, with each caste fulfilling distinct societal roles. The hierarchy is a core part of the world-building, influencing the behavior, politics, and conflicts within the solar system.</p>
+      <img src="https://images.squarespace-cdn.com/content/v1/5ca03db673304600013d111e/1621732231465-YCWQSW98EHB9TGTFNB98/Red+Rising+Color+Pyramid" alt="The Color hierarchy">
+      <p>
+      <h3>HighColors</h3>
+      <ul>
+        <li><span class="bold">Gold:</span> The fiercely intelligent rulers of humanity.</li>
+        <li><span class="bold">Silver:</span> Innovators, financiers, and businessmen.</li>
+        <li><span class="bold">White:</span> Priests and priestesses who oversee the ritual functions of Society.</li>
+        <li><span class="bold">Copper:</span> Administrators, lawyers, and bureaucrats.</li>
+      </ul>
+
+      <h3>MidColors</h3>
+      <ul>
+        <li><span class="bold">Blue:</span> Pilots and astronavigators bred to crew starships.</li>
+        <li><span class="bold">Yellow:</span> Experts in human and natural science. Doctors, psychologists, and scientists.</li>
+        <li><span class="bold">Green:</span> The programmers and developers of technology.</li>
+        <li><span class="bold">Violet:</span> The creative class of artists, musicians, and performers.</li>
+        <li><span class="bold">Orange:</span> Provide systems support upon starships and all manner of mechanical enterprises.</li>
+        <li><span class="bold">Gray:</span> Police and military personnel.</li>
+      </ul>
+
+      <h3>LowColors</h3>
+      <ul>
+        <li><span class="bold">Brown:</span> Servants in homes, businesses, and social institutions.</li>
+        <li><span class="bold">Obsidian:</span> A monstrous race bred only for war.</li>
+        <li><span class="bold">Pink:</span> Unparalleled in beauty, they are bred and trained for the physical arts of pleasure.</li>
+        <li><span class="bold">Red:</span> Unskilled manual laborers condition to brutal environs.</li>
+      </ul>
+      </p>
+    </section>
+
+    <section id="characters" class="main-section">
+      <header>
+        <h2>Characters</h2>
+      </header>
+      <p>While there are many characters throughout Red Rising, these are some of the key players in the first three books.
+      <ul>
+        <li><span class="bold">Darrow of Lykos:</span> The main protagonist who seeks to infiltrate the Golds and change the world.</li>
+        <li><span class="bold">Mustang (Virginia au Augustus):</span> A Gold who becomes a crucial ally and romantic interest for Darrow.</li>
+        <li><span class="bold">Sevro au Barca:</span> Darrow's loyal and ruthless friend, a key figure in the rebellion.</li>
+        <li><span class="bold">The Jackal:</span> A Gold antagonist who is manipulative and dangerous.</li>
+        <li><span class="bold">Ragnar Volarus:</span> An Obsidian warrior who joins Darrow's cause.</li>
+      </ul>
+      </p>
+    </section>
+
+    <section id="major_plot_points" class="main-section">
+      <header>
+        <h2>Major Plot Points</h2>
+      </header>
+      <p>
+      <ul>
+        <li><span class="bold">The Rising:</span> Darrow’s transformation from a miner to a rebel.</li>
+        <li><span class="bold">The Institute:</span> A prestigious school where the Golds train, and Darrow's first infiltration begins.</li>
+        <li><span class="bold">The Rebellion:</span> Darrow leading a revolution to bring down the Golds.</li>
+        <li><span class="bold">The War for the Galaxy:</span> The culmination of the series’ political and military battles.</li>
+      </ul>
+      </p>
+    </section>
+
+    <section id="technologies" class="main-section">
+      <header>
+        <h2>Technologies</h2>
+      </header>
+      <p>
+        The series integrates various futuristic technologies that support the plot's progression, playing vital roles in warfare, communication, and survival.
+      <ul>
+        <li><span class="bold">Telescreens:</span> Communication technology used to control the population.</li>
+        <li><span class="bold">Drones and AI:</span> Advanced machinery controlled by the ruling class to maintain order.</li>
+        <li><span class="bold">Transhumanism:</span> The process of genetic modification and enhancements through a method known as “carving.” With a talented enough Carver, a complete body transformation is possible.</li>
+        <li><span class="bold">Weapons:</span> Advanced firearms, blades, and other forms of combat technology.</li>
+        <li><span class="bold">Razors:</span> The primary weapon of Golds in single combat, and a notable symbol of Gold's right to rule. Razors are considered sacred, and not allowed use by any other Color. The blade can be toggled between a sword and a whip. When in whip form, its shape can be altered at will with a chemical impulse.</li>
+      </ul>
+      </p>
+    </section>
+
+    <section id="space_warfare" class="main-section">
+      <header>
+        <h2>Space Warfare</h2>
+      </header>
+      <p>
+        Space warfare in the Red Rising universe is a critical aspect of the Golds' dominance over the solar system. The mechanics behind space battles and duels are complex and reflect the high-tech, high-stakes world of the Red Rising series.</p>
+      <p>
+        Space battles in the Red Rising universe are governed by advanced technology and military strategies. The key elements include spacecraft types, weapons, and tactics.
+      <ul>
+        <li><span class="bold">Ship Types:</span> Various classes of ships serve distinct roles, from the agile Prowlers to the heavily armed Destroyers.</li>
+        <li><span class="bold">Weaponry:</span> Ships are equipped with energy cannons, railguns, and missile pods.</li>
+        <li><span class="bold">Tactics:</span> Battles are fought with an emphasis on speed, maneuverability, and precision targeting.
+        </li>
+      </ul>
+      <code>
+        Space Battle Ship Orders<br>
+            // Ship Orders for Fleet Coordination<br>
+            1. Engage target ship at bearing 45 degrees.<br>
+            2. Activate shields at 75% power.<br>
+            3. Launch missile salvo at 1800 meters.<br>
+            4. Coordinate with nearby ships for flanking maneuver.
+          </code>
+      </p>
+
+      <section id="spacecraft" class="space-warfare-subsection main-section">
+        <header>
+          <h3>Spacecraft</h3>
+        </header>
+        <p>
+          Spacecraft in Red Rising vary in size, firepower, and capabilities. Each type of ship plays a unique role in combat, from stealth operations to full-scale assaults. Spacecraft are critical components of military strategy. Each class of ship serves a distinct purpose in battle, from reconnaissance to direct combat.
+        <ul>
+          <li><span class="bold">Prowlers:</span> Small, fast ships designed for stealth and surprise attacks, often used for reconnaissance.</li>
+          <li><span class="bold">Destroyers:</span> Heavily armed and armored ships, meant for prolonged engagements with the enemy. </li>
+          <li><span class="bold">Carriers:</span> Large vessels designed to carry smaller ships, offering fleet support and logistics during battles.</li>
+          <li><span class="bold">Capital Ships:</span> The largest ships, capable of commanding fleets and with enough firepower to destroy entire fleets.</li>
+        </ul>
+        </p>
+
+      </section>
+
+      <section id="weaponry" class="space-warfare-subsection main-section">
+        <header>
+          <h3>Weaponry</h3>
+        </header>
+        <p>
+          Space battles involve a wide range of highly advanced weaponry, with ships equipped to take on entire fleets or destroy targets with pinpoint precision. Ship weaponry includes energy-based weapons, projectiles, and long-range missiles. Understanding each weapon type is critical for success in combat.
+        <ul>
+          <li><span class="bold">Energy Cannons:</span> These emit powerful beams capable of damaging or disabling enemy ships.
+          </li>
+          <li><span class="bold">Railguns:</span> High-velocity weapons that fire projectiles at incredible speeds, designed to pierce through ship hulls.</li>
+          <li><span class="bold">
+              Missile Pods:</span> Ships can launch homing or cluster missiles to target enemy ships from a distance.</li>
+          <li><span class="bold">EMP Pulses:</span> These disrupt enemy ship electronics and temporarily disable their systems.</li>
+        </ul>
+        </p>
+        <code>
+          //The weapons on a ship must be regularly calibrated for peak performance during combat situations. <br>
+          // Weapon System Calibration Script<br>
+              1. Run diagnostics on all energy cannons and missile pods.<br>
+              2. Adjust energy levels for optimal range and power output.<br>
+              3. Test targeting system and realign for precision firing.<br>
+              4. Calibrate shields to absorb energy weapon impacts.<br>
+            </code>
+      </section>
+
+      <section id="strategy" class="space-warfare-subsection main-section">
+        <header>
+          <h3>Strategy</h3>
+        </header>
+        <p>
+          Space combat revolves around advanced tactics, such as feints, evasive maneuvers, and countermeasures. Pilots must combine skill and technology to outmaneuver their opponents.</p>
+        <p>In the chaotic environment of space, combat strategies vary depending on the engagement type—whether a large-scale battle or a smaller skirmish. Key strategies include:
+        <ul>
+          <li><span class="bold">Dogfighting:</span> In close quarters, fighters engage in high-speed, evasive maneuvers, using energy shields and homing missiles. </li>
+          <li><span class="bold">Ambushes:</span> Stealth-based operations in which a smaller force lures a larger fleet into a vulnerable position before attacking.</li>
+          <li><span class="bold">Fleet Battles:</span> Large-scale engagements where multiple ships from opposing factions engage each other with coordinated tactics. They often involve the use of tactics like flanking, decoy operations, and coordinated ship formations. </li>
+          <li><span class="bold">Skirmishes:</span> Smaller battles, often involving a few ships or even individual ships, which are fast-paced and focused on surprise and agility.</li>
+          <li><span class="bold">Defensive Engagements:</span> When a fleet is tasked with defending a position or resource, often involving heavy fortifications and prolonged resistance.</li>
+        </ul>
+        </p>
+          <code>
+              // Fleet Command Engagement Protocol<br>
+              1. All ships report status at the start of the engagement.<br>
+              2. Assign each ship a specific role: Assault, Defense, Recon, or Support.<br>
+              3. Maintain communication between fleet ships to adjust tactics as needed.<br>
+              4. Coordinate attack waves based on enemy fleet movements.<br>
+            </code>
+      </section>
+
+    </section>
+
+    <section id="duels" class="main-section">
+      <header>
+        <h2>Duels</h2>
+      </header>
+      <p>
+        Among the Golds, where honor and status are crucial, duels between Golds are intense, ritualistic engagements, often serving as a way to determine leadership or settle political disputes.
+      <ul>
+        <li><span class="bold">Duels for Status:</span> Golds frequently duel to establish dominance, with the winner gaining political influence and recognition.</li>
+        <li><span class="bold">Formal Challenges:</span> Duels are sometimes initiated by a formal challenge, where one Gold demands combat to resolve a conflict.</li>
+        <li><span class="bold">Weapons of Choice:</span> Duels often involve razors, blades, hand-to-hand combat, or even personal energy weapons depending on the participants’ preferences.</li>
+        <li><span class="bold">Code of Honor:</span> The duels are governed by a strict code of conduct, with both parties expected to honor the rules of engagement and the outcome.</li>
+      </ul>
+      </p>
+      <code>
+        //Duels have a defined procedure for initiating and conducting combat. The rules ensure fairness between opponents.<br>
+        1. Duelists meet at designated arena.<br>
+        2. Weapons and armor are agreed upon by both parties.<br>
+        3. Combatants face each other, awaiting the signal to begin.<br>
+        4. No interference or outside weapons allowed.<br>
+        5. First to incapacitate or disarm the opponent wins the duel.<br>
+      </code>
+
+        <code>
+            // Duel Combat Code<br>
+            1. Begin the duel at a distance of 5 meters.<br>
+            2. Weapons allowed: Swords, Gauntlets, Pulse Blades.<br>
+            3. First to disable or disarm their opponent wins.<br>
+            4. If either combatant yields, the duel ends in a draw.
+          </code>
+
+    </section>
+
+    <footer>
+      <p>
+        Pick up a copy of Red Rising at your local library today!
+      </p>
+      <p class="copyright-info">
+        © We’re Totally Legit, Trust - 2025
+      </p>
+    </footer>
+  </main>
+
+</body>
+
+</html>

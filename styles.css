@@ -1,0 +1,225 @@
+/* -----CSS RESET----- */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* -----CSS Styling----- */
+body {
+  font-family: Kanit, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-color: #3f3f3f;
+}
+
+#navbar {
+  position: fixed;
+  width: 290px;
+  height: 100%;
+  color: #fff;
+  font-family: "Zen Dots", Verdana, sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  border-right: 5px solid #c5c5c5;
+  background: #212121;
+}
+
+.nav-link {
+  display: block;
+}
+
+#navbar li {
+  list-style-type: none;
+  padding-left: 0.5em;
+  padding-top: 0.4em;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #c5c5c5;
+  position: relative;
+}
+#navbar header {
+  font-family: Wallpoet, Courier, sans-serif;
+  font-size: 42px;
+  padding-bottom: 20px;
+  background: #972929;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-bottom: 5px solid #c5c5c5;
+}
+#navbar ul {
+  padding-left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 88%;
+}
+#navbar .space-warfare-subsection {
+  text-indent: 2em;
+  font-size: 20px;
+}
+#navbar a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar a:hover {
+  color: #c42929;
+}
+
+/*-----Main elements-----*/
+#main-doc {
+  position: absolute;
+  margin-left: 325px;
+  margin-right: 2em;
+  padding-bottom: 2em;
+}
+#main-doc h2,
+h3 {
+  font-family: Zen Dots;
+  font-size: 1.875em;
+  font-weight: 400;
+  padding-bottom: 0.5em;
+  padding-top: 1.25em;
+}
+#main-doc h3 {
+  font-size: 1.375em;
+}
+#main-doc p {
+  text-indent: 2em;
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 600;
+}
+img {
+  padding: 1em 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#world_building img {
+  width: 60%;
+  cursor: pointer;
+}
+
+#the_colors img {
+  width: 40%;
+}
+code {
+  color: #000;
+  display: block;
+  text-align: left;
+
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #d9d9d9;
+  padding: 1em 0.9em;
+  margin: 0.625em;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 95%;
+}
+footer p {
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 3em;
+}
+.copyright-info {
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+/*Add media query here*/
+@media only screen and (max-width: 815px) {
+  #navbar,
+  #navbar ul {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 210px;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 1em;
+  }
+  #the_colors img {
+  width: 60%;
+  }
+  #world_building img{
+    width: 80%
+  }
+}
